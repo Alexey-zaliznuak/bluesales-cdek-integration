@@ -17,6 +17,7 @@ class Order:
         self.id: int = order.get('id')
         self.tracking_number = order.get("trackingNumber", None)
         self.status_name = order.get("orderStatus", {}).get("name", None)
+        self.status_id = order.get("orderStatus", {}).get("id", None)
 
 class OrdersAPI:
     def __init__(self, request_api: RequestApi):
