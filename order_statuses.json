@@ -1,0 +1,657 @@
+[
+    {
+        "order_id": 10613108,
+        "status_name": "Отправлен+",
+        "cdek_status": "TAKEN_BY_TRANSPORTER_FROM_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10609399,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10609341,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10609192,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10608836,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10608129,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10607781,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10607708,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10607398,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10607215,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10606459,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10605853,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10605580,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10605113,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10604977,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10604704,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10604003,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10603694,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_TRANSIT_WAREHOUSE"
+    },
+    {
+        "order_id": 10603679,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10603103,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10602936,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10602726,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10602384,
+        "status_name": "Отправлен+",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10601844,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10601710,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10601642,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10600401,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10600044,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10599843,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_RECIPIENT_CITY"
+    },
+    {
+        "order_id": 10599182,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10599110,
+        "status_name": "Отправлен+",
+        "cdek_status": "TAKEN_BY_TRANSPORTER_FROM_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10598965,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10598688,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10598338,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10598057,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10598043,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10598021,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10597913,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10597702,
+        "status_name": "Отправлен+",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10597672,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10597616,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10597611,
+        "status_name": "Отправлен+",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10597398,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10597292,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_RECIPIENT_CITY"
+    },
+    {
+        "order_id": 10595844,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10595753,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10595327,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10595265,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10594769,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10594616,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10593322,
+        "status_name": "Отправлен+",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10593297,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10593182,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10592793,
+        "status_name": "Отправлен+",
+        "cdek_status": "POSTOMAT_POSTED"
+    },
+    {
+        "order_id": 10592101,
+        "status_name": "Отправлен+",
+        "cdek_status": "TAKEN_BY_TRANSPORTER_FROM_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10591788,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10591004,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10589459,
+        "status_name": "Отправлен+",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10588973,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_RECIPIENT_CITY_WAREHOUSE"
+    },
+    {
+        "order_id": 10588750,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10588640,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10587994,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10587547,
+        "status_name": "Отправлен+",
+        "cdek_status": "TAKEN_BY_TRANSPORTER_FROM_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10587286,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10587271,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_RECIPIENT_CITY"
+    },
+    {
+        "order_id": 10585851,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10585693,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_RECIPIENT_CITY_WAREHOUSE"
+    },
+    {
+        "order_id": 10585569,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10585542,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10585121,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10584984,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "POSTOMAT_POSTED"
+    },
+    {
+        "order_id": 10583698,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10583445,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10582141,
+        "status_name": "Отправлен+",
+        "cdek_status": "TAKEN_BY_TRANSPORTER_FROM_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10581983,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10580688,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10579459,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10577329,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10577301,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10576306,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10574116,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10573587,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10573540,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10573118,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10573069,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10571888,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10571730,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10570187,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10568686,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10568627,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10567879,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10561445,
+        "status_name": "Отправлен+",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10560052,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_IN_RECIPIENT_CITY"
+    },
+    {
+        "order_id": 10558130,
+        "status_name": "Отправлен+",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10551206,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10547963,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10546840,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10543584,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10539632,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10537418,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10534125,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10529663,
+        "status_name": "Отправлен+",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10516697,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10491730,
+        "status_name": "Правки заказа",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10479806,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_RECIPIENT_CITY"
+    },
+    {
+        "order_id": 10461464,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10452795,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10437592,
+        "status_name": "Отправлен+",
+        "cdek_status": "SENT_TO_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10436246,
+        "status_name": "Ожидает отправку СДЭК",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10419868,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10403914,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10383453,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10374727,
+        "status_name": "Ожидает в ПВЗ",
+        "cdek_status": "ACCEPTED_AT_PICK_UP_POINT"
+    },
+    {
+        "order_id": 10368016,
+        "status_name": "Правки заказа",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10320285,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10318568,
+        "status_name": "ЗАКАЗ ОФОРМЛЕН",
+        "cdek_status": "DELIVERED"
+    },
+    {
+        "order_id": 10318425,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10316674,
+        "status_name": "Заказ готов",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10304877,
+        "status_name": "Разбор",
+        "cdek_status": "CREATED"
+    },
+    {
+        "order_id": 10278579,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10272039,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10227292,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10160835,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10153898,
+        "status_name": "Отправлен+",
+        "cdek_status": "READY_FOR_SHIPMENT_IN_TRANSIT_CITY"
+    },
+    {
+        "order_id": 10114603,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10084268,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 10059353,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 9938147,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 9922955,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 9875398,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    },
+    {
+        "order_id": 9815716,
+        "status_name": "Разбор",
+        "cdek_status": "NOT_DELIVERED"
+    }
+]

@@ -19,6 +19,7 @@ class RequestApi:
         return self.__login
 
     def send(self, method, data=None):
+        print(data)
         payload = {
             'login': self.__login,
             'password': self.__password,

@@ -104,6 +104,40 @@ class OrdersAPI:
                 bar.next(r.count)
         return items
 
+    def set_many_statuses(
+        self,
+        data: list[tuple[str, str]]
+    ):
+        grouped_data = {}
+
+        for order_id, status in data:
+            if status not in grouped_data:
+                grouped_data[status] = []
+            grouped_data[status].append(order_id)
+
+        for crm_status, ids in grouped_data.items():
+            if not ids:
+                continue
+
+            print(f"Обновление {len(ids)} заказов до статуса '{crm_status}'.")
+
+            try:
+                response = self.request_api.send(
+                    OrdersMethods.update_many,
+                    data={
+                        "ids": ids,
+                        "orderStatus": crm_status
+                    }
+                )
+
+                if response.success:
+                    print(f"Успешно обновлено {len(ids)} заказов до статуса '{crm_status}'.")
+                else:
+                    print(f"Ошибка при обновлении заказов до статуса '{crm_status}': {response.error}")
+
+            except Exception as e:
+                print(f"Исключение при обновлении заказов до статуса '{crm_status}': {e}")
+
 class OrdersResponse:
     def __init__(self, response: dict):
         self.count: int = response['count']
