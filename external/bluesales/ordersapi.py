@@ -113,7 +113,7 @@ class OrdersAPI:
         for order_id, status in data:
             if status not in grouped_data:
                 grouped_data[status] = []
-            grouped_data[status].append(order_id)
+            grouped_data[status].append(str(order_id))
 
         for crm_status, ids in grouped_data.items():
             if not ids:
@@ -121,13 +121,15 @@ class OrdersAPI:
 
             print(f"Обновление {len(ids)} заказов до статуса '{crm_status}'.")
 
+            data = {
+                "ids": ','.join(ids),
+                "orderStatus": crm_status
+            }
+
             try:
                 response = self.request_api.send(
                     OrdersMethods.update_many,
-                    data={
-                        "ids": ids,
-                        "orderStatus": crm_status
-                    }
+                    data=data
                 )
 
                 if response.success:
