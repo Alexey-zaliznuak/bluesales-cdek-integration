@@ -122,8 +122,10 @@ class OrdersAPI:
             print(f"Обновление {len(ids)} заказов до статуса '{crm_status}'.")
 
             data = {
-                "ids": ','.join(ids),
-                "orderStatus": crm_status
+                "ids": ids,
+                "orderStatus": {
+                    "id": crm_status
+                },
             }
 
             try:
