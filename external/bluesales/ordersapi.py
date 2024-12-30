@@ -134,7 +134,9 @@ class OrdersAPI:
                     data=data
                 )
 
-                if response.success:
+                if isinstance(response, str):
+                    print(f"Результат обновления {len(ids)} заказов до статуса '{crm_status}': '{response}'")
+                elif response.success:
                     print(f"Успешно обновлено {len(ids)} заказов до статуса '{crm_status}'.")
                 else:
                     print(f"Ошибка при обновлении заказов до статуса '{crm_status}': {response.error}")

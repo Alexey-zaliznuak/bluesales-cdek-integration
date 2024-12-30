@@ -1,6 +1,6 @@
-import json
-from external.cdek import Client
+from requests.exceptions import HTTPError
 
+from external.cdek import Client
 from external.bluesales import BlueSales
 
 
@@ -102,7 +102,7 @@ def main():
     for order in bluesales_orders:
         try:
             cdek_status = CDEK.get_order_info(order.tracking_number)["entity"]["statuses"][0]["code"]
-            print(order.status_name, cdek_status, get_crm_status_by_cdek(order.status_name, cdek_status))
+            # print(order.status_name, cdek_status, get_crm_status_by_cdek(order.status_name, cdek_status))
 
             all_statuses.append({
                 'order_id': order.id,
@@ -114,9 +114,9 @@ def main():
                 cdek_status != 'CREATED' and
                 STATUSES[order.status_name] != get_crm_status_by_cdek(order.status_name, cdek_status)
             ):
-                print('Добавлен ', order.id, get_crm_status_by_cdek(order.status_name, cdek_status), 'был', STATUSES[order.status_name], '-', cdek_status)
+                # print('Добавлен ', order.id, get_crm_status_by_cdek(order.status_name, cdek_status), 'был', STATUSES[order.status_name], '-', cdek_status)
                 update_orders.append([order.id, get_crm_status_by_cdek(order.status_name, cdek_status)])
-        except Exception as e:
+        except HTTPError as e:
             print(e)
 
     # with open('order_statuses.json', 'w', encoding='utf-8') as f:

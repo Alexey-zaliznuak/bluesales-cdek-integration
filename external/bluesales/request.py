@@ -30,9 +30,6 @@ class RequestApi:
 
         try:
             result = requests.post(url=self.__base_url, params=payload, json=data)
-
-            print(result.request.url)
-            print(result.request.body)
         except (ConnectionError, TimeoutError, requests.exceptions.ReadTimeout):
             raise HttpError('Error with connection to bluesales.ru API server')
         if result.status_code == 404:
