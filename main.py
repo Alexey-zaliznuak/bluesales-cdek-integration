@@ -101,6 +101,9 @@ def main():
 
     for order in bluesales_orders:
         try:
+            if order.status_name == "Разбор":
+                continue
+
             cdek_status = CDEK.get_order_info(order.tracking_number)["entity"]["statuses"][0]["code"]
             # print(order.status_name, cdek_status, get_crm_status_by_cdek(order.status_name, cdek_status))
 

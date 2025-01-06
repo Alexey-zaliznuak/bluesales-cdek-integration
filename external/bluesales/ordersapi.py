@@ -138,7 +138,7 @@ class OrdersAPI:
                 157158: 4827
             }
 
-            today = datetime.date.today()
+            today = datetime.date().today()
 
             formatted_date = today.strftime("%Y-%m-%d")
             if crm_status == 157223:
