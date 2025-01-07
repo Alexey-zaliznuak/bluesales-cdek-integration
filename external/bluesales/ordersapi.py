@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime, timedelta, date
+from time import sleep
 from typing import List
 
 from progress.bar import Bar as Bar
@@ -102,6 +103,7 @@ class OrdersAPI:
                 items.extend(r.orders)
                 offset += count
                 bar.next(r.count)
+                sleep(2)
         return items
 
     def set_many_statuses(
