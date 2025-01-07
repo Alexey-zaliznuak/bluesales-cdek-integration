@@ -1,3 +1,4 @@
+from time import sleep
 from requests.exceptions import HTTPError
 
 from external.cdek import Client
@@ -71,12 +72,17 @@ CDEK_TO_CRM_STATUS_ID = {
 def get_crm_status_by_cdek(current_crm_status: str, cdek_status_name: str):
     return CDEK_TO_CRM_STATUS_ID.get(cdek_status_name, current_crm_status)
 
-
-def main():
+def main(*args, **kwargs):
     BLUESALES = BlueSales("managerYT13", "YTYT2025")
     CDEK = Client("XXsJ3TCwHbusuwgRNt6pgOeaq86Hj8o9", "lD1o1i6ZtyKiLxDyhuMHk52QxKoqwnxj")
 
-    bluesales_orders = BLUESALES.orders.get_all()
+    for _ in range(3):
+        try:
+            bluesales_orders = BLUESALES.orders.get_all()
+            break
+        except Exception as e:
+            print(e)
+            sleep(30)
 
     print("Всего:", len(bluesales_orders), "сделок")
 

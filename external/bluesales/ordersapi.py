@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from typing import List
 
 from progress.bar import Bar as Bar
@@ -138,7 +138,7 @@ class OrdersAPI:
                 157158: 4827
             }
 
-            today = datetime.date().today()
+            today = date.today()
 
             formatted_date = today.strftime("%Y-%m-%d")
             if crm_status == 157223:
