@@ -15,7 +15,7 @@ from external.bluesales.exceptions import BlueSalesError
 import logging
 from logging.handlers import RotatingFileHandler
 from logging import StreamHandler
-from settings import BLUESALES_LOGIN, BLUESALES_PASSWORD, CDEK_CLIENT_ID, CDEK_CLIENT_SECRET, CDEK_TO_CRM_STATUS_ID, INVERTED_STATUSES, STATUSES, VK_CLIENTS_BY_GROUP_ID, text_for_postomat, text_for_pvz
+from settings import Settings
 from external.bluesales.ordersapi import Order
 
 
@@ -61,10 +61,10 @@ def notify_that_orders_in_pvz(orders: List[Tuple[Order, bool]]):
             logger.info(f"У клиента не указаны данные в вк для уведомления. {order_contact_data}")
             continue
 
-        vk = VK_CLIENTS_BY_GROUP_ID[order.customer_vk_messages_group_id]
+        vk = Settings.VK_CLIENTS_BY_GROUP_ID[order.customer_vk_messages_group_id]
         result = vk.messages.send(
             user_id=order.customer_vk_id,
-            message=text_for_postomat if is_postomat else text_for_pvz,
+            message=Settings.text_for_postomat if is_postomat else Settings.text_for_pvz,
             random_id=int.from_bytes(os.getrandom(4), byteorder="big")
         )
         logger.debug("Результат отправки: " + str(result))
@@ -75,8 +75,8 @@ def get_crm_status_by_cdek(current_crm_status: str, cdek_status_name: str):
     return CDEK_TO_CRM_STATUS_ID.get(cdek_status_name, current_crm_status)
 
 def main(*args, **kwargs):
-    BLUESALES = BlueSales(BLUESALES_LOGIN, BLUESALES_PASSWORD)
-    CDEK = Client(CDEK_CLIENT_ID, CDEK_CLIENT_SECRET)
+    BLUESALES = BlueSales(Settings.BLUESALES_LOGIN, Settings.BLUESALES_PASSWORD)
+    CDEK = Client(Settings.CDEK_CLIENT_ID, Settings.CDEK_CLIENT_SECRET)
 
     bluesales_orders = []
 
@@ -120,12 +120,12 @@ def main(*args, **kwargs):
 
             if (
                 cdek_status != 'CREATED' and
-                STATUSES[order.status_name] != get_crm_status_by_cdek(order.status_name, cdek_status)
+                Settings.STATUSES[order.status_name] != get_crm_status_by_cdek(order.status_name, cdek_status)
             ):
                 update_orders.append([order.id, get_crm_status_by_cdek(order.status_name, cdek_status), order.customer_id])
 
                 logger.debug("New update: " + str(get_crm_status_by_cdek(order.status_name, cdek_status)) + f"а ожидает в пвз: {str(STATUSES['Ожидает в ПВЗ'])}")
-                if get_crm_status_by_cdek(order.status_name, cdek_status) == STATUSES["Ожидает в ПВЗ"]:
+                if get_crm_status_by_cdek(order.status_name, cdek_status) == Settings.STATUSES["Ожидает в ПВЗ"]:
                     is_postomat = cdek_status == "POSTOMAT_POSTED"
                     orders_notify_that_order_in_pvz.append((order, is_postomat))
 
