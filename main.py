@@ -124,7 +124,6 @@ def main(*args, **kwargs):
             ):
                 update_orders.append([order.id, get_crm_status_by_cdek(order.status_name, cdek_status), order.customer_id])
 
-                logger.debug("New update: " + str(get_crm_status_by_cdek(order.status_name, cdek_status)) + f"а ожидает в пвз: {str(STATUSES['Ожидает в ПВЗ'])}")
                 if get_crm_status_by_cdek(order.status_name, cdek_status) == Settings.STATUSES["Ожидает в ПВЗ"]:
                     is_postomat = cdek_status == "POSTOMAT_POSTED"
                     orders_notify_that_order_in_pvz.append((order, is_postomat))
