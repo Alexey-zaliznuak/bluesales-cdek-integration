@@ -15,7 +15,7 @@ from external.bluesales.exceptions import BlueSalesError
 import logging
 from logging.handlers import RotatingFileHandler
 from logging import StreamHandler
-from settings import INVERTED_STATUSES, STATUSES, VK_CLIENTS_BY_GROUP_ID
+from settings import BLUESALES_LOGIN, BLUESALES_PASSWORD, CDEK_CLIENT_ID, CDEK_CLIENT_SECRET, CDEK_TO_CRM_STATUS_ID, INVERTED_STATUSES, STATUSES, VK_CLIENTS_BY_GROUP_ID, text_for_postomat, text_for_pvz
 from external.bluesales.ordersapi import Order
 
 
@@ -40,63 +40,6 @@ stream_handler.setFormatter(stream_formatter)
 stream_handler.setLevel(logging.DEBUG)
 logger.addHandler(stream_handler)
 
-
-CDEK_TO_CRM_STATUS_ID = {
-    # "ACCEPTED": STATUSES["ЗАКАЗ ОФОРМЛЕН"],
-    "CREATED": STATUSES["Отправлен+"],
-    "RECEIVED_AT_SHIPMENT_WAREHOUSE": STATUSES["Отправлен+"],
-    "READY_TO_SHIP_AT_SENDING_OFFICE": STATUSES["Отправлен+"],
-    "READY_FOR_SHIPMENT_IN_TRANSIT_CITY": STATUSES["Отправлен+"],
-    "READY_FOR_SHIPMENT_IN_SENDER_CITY": STATUSES["Отправлен+"],
-    "RETURNED_TO_SENDER_CITY_WAREHOUSE": STATUSES["Отправлен+"],
-    "TAKEN_BY_TRANSPORTER_FROM_SENDER_CITY": STATUSES["Отправлен+"],
-    "SENT_TO_TRANSIT_CITY": STATUSES["Отправлен+"],
-    "ACCEPTED_IN_TRANSIT_CITY": STATUSES["Отправлен+"],
-    "ACCEPTED_AT_TRANSIT_WAREHOUSE": STATUSES["Отправлен+"],
-    "RETURNED_TO_TRANSIT_WAREHOUSE": STATUSES["Отправлен+"],
-    "READY_TO_SHIP_IN_TRANSIT_OFFICE": STATUSES["Отправлен+"],
-    "TAKEN_BY_TRANSPORTER_FROM_TRANSIT_CITY": STATUSES["Отправлен+"],
-    "SENT_TO_SENDER_CITY": STATUSES["Отправлен+"],
-    "SENT_TO_RECIPIENT_CITY": STATUSES["Отправлен+"],
-    "ACCEPTED_IN_SENDER_CITY": STATUSES["Отправлен+"],
-    "ACCEPTED_IN_RECIPIENT_CITY": STATUSES["Отправлен+"],
-    "ACCEPTED_AT_RECIPIENT_CITY_WAREHOUSE": STATUSES["Отправлен+"],
-    "ACCEPTED_AT_PICK_UP_POINT": STATUSES["Ожидает в ПВЗ"],
-    "TAKEN_BY_COURIER": STATUSES["Отправлен+"],
-    "RETURNED_TO_RECIPIENT_CITY_WAREHOUSE": STATUSES["Отправлен+"],
-    "DELIVERED": STATUSES["Доставлен"],
-    "NOT_DELIVERED": STATUSES["Возврат"],
-    "INVALID": STATUSES["Возврат"],
-    "IN_CUSTOMS_INTERNATIONAL": STATUSES["Отправлен+"],
-    "SHIPPED_TO_DESTINATION": STATUSES["Отправлен+"],
-    "PASSED_TO_TRANSIT_CARRIER": STATUSES["Отправлен+"],
-    "IN_CUSTOMS_LOCAL": STATUSES["Отправлен+"],
-    "CUSTOMS_COMPLETE": STATUSES["Ожидает в ПВЗ"],
-    "POSTOMAT_POSTED": STATUSES["Ожидает в ПВЗ"],
-    "POSTOMAT_SEIZED": STATUSES["Возврат"],
-    "POSTOMAT_RECEIVED": STATUSES["Доставлен"],
-}
-
-
-
-text_for_pvz = (
-    "Здравствуйте!\n"
-    "Ваши часы ожидают в пункте выдачи!❤️\n\n"
-    "Обратите внимание, что в заказе Вас ждёт подарок!🎁\n\n"
-    "Вы мне очень сильно поможете, если заберете заказ СЕГОДНЯ🙏🏻\n"
-    "Просто отчетность о доставленных заказах напрямую влияет на мою зарплату😔 "
-    "Буду Вам очень благодарна😊\n"
-    "Сегодня получится забрать заказ?)"
-)
-text_for_postomat = (
-    "Здравствуйте!\n"
-    "Ваши часы ожидают в постамате!❤️\n\n"
-    "Обратите внимание, что СРОК ХРАНЕНИЯ 2 ДНЯ и в заказе Вас ждёт подарок!🎁\n\n"
-    "Вы мне очень сильно поможете, если заберете заказ СЕГОДНЯ🙏🏻\n"
-    "Просто отчетность о доставленных заказах напрямую влияет на мою зарплату😔 "
-    "Буду Вам очень благодарна😊\n"
-    "Сегодня получится забрать заказ?)"
-)
 
 def notify_that_orders_in_pvz(orders: List[Tuple[Order, bool]]):
     # orders: List[Order, is_postomat: bool]
@@ -132,8 +75,8 @@ def get_crm_status_by_cdek(current_crm_status: str, cdek_status_name: str):
     return CDEK_TO_CRM_STATUS_ID.get(cdek_status_name, current_crm_status)
 
 def main(*args, **kwargs):
-    BLUESALES = BlueSales("managerYT10", "YT102025")
-    CDEK = Client("XXsJ3TCwHbusuwgRNt6pgOeaq86Hj8o9", "lD1o1i6ZtyKiLxDyhuMHk52QxKoqwnxj")
+    BLUESALES = BlueSales(BLUESALES_LOGIN, BLUESALES_PASSWORD)
+    CDEK = Client(CDEK_CLIENT_ID, CDEK_CLIENT_SECRET)
 
     bluesales_orders = []
 
